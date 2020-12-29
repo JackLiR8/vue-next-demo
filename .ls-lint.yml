@@ -1,0 +1,5 @@
+ls:
+  src:
+    .js: kebab-case
+    .vue: PascalCase
+    .png: kebab-case

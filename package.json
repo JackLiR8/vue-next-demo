@@ -3,13 +3,29 @@
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
-    "build": "vite build"
+    "build": "vite build",
+    "ls-lint": "ls-lint"
+  },
+  "gitHooks": {
+    "pre-commit": "ls-lint && lint-staged"
+  },
+  "lint-staged": {
+    "*.js": [
+      "prettier --write"
+    ],
+    "*.vue": [
+      "prettier --write"
+    ]
   },
   "dependencies": {
     "vue": "^3.0.4"
   },
   "devDependencies": {
-    "vite": "^1.0.0-rc.13",
-    "@vue/compiler-sfc": "^3.0.4"
+    "@ls-lint/ls-lint": "^1.9.2",
+    "@vue/compiler-sfc": "^3.0.4",
+    "chalk": "^4.1.0",
+    "lint-staged": "^10.5.3",
+    "prettier": "^2.2.1",
+    "vite": "^1.0.0-rc.13"
   }
 }
