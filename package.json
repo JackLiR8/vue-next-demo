@@ -11,10 +11,7 @@
     "commit-msg": "node scripts/verify-commit.js"
   },
   "lint-staged": {
-    "*.js": [
-      "prettier --write"
-    ],
-    "*.vue": [
+    "*.{js, vue}": [
       "prettier --write"
     ]
   },
