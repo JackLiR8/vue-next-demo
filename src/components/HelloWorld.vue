@@ -5,15 +5,19 @@
 </template>
 
 <script>
-export default {
+import { defineComponent, ref } from 'vue'
+export default defineComponent({
   name: 'HelloWorld',
   props: {
     msg: String
   },
-  data() {
+  
+  setup(props) {
+    const count = ref(0)
+
     return {
-      count: 0
+      count
     }
   }
-}
+}) 
 </script>
