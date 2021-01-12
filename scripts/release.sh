@@ -7,6 +7,12 @@ else
   VERSION="$1"
 fi
 
+# limit duplate version
+if [[ $(git tag) =~ "$VERSION" ]]; then
+  echo "Error: duplate version $VERSION" >&2
+  exit 1
+fi
+
 # trap error
 # delete new tag, reset commit
 trap "git tag -d v$VERSION; git reset --hard HEAD^" ERR
