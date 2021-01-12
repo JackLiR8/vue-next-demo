@@ -7,6 +7,10 @@ else
   VERSION="$1"
 fi
 
+# trap error
+# delete new tag, reset commit
+trap "git tag -d v$VERSION; git reset --hard HEAD^" ERR
+
 read -p "Releasing $VERSION - are you sure? (y/n)" -n 1 -r
 echo
 if [[ $REPLY =~ ^[Yy]$ ]]; then
