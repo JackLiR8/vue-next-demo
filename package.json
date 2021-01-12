@@ -6,7 +6,8 @@
     "build": "vite build",
     "ls-lint": "ls-lint",
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s",
-    "release": "bash scripts/release.sh"
+    "release": "bash scripts/release.sh",
+    "gitlog": "git log --pretty=oneline"
   },
   "gitHooks": {
     "pre-commit": "ls-lint && lint-staged",
