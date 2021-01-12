@@ -29,11 +29,11 @@ if [[ $REPLY =~ ^[Yy]$ ]]; then
   npm run changelog
 
   # commit
-  # git add -A
+  git add -A
   
-  # git commit -m "release: release $VERSION"
+  git commit -m "release: release $VERSION"
 
-  # # push
-  # git push
-  # git push origin refs/tags/v$VERSION
+  # push
+  git push
+  git push origin refs/tags/v$VERSION
 fi
