@@ -25,13 +25,12 @@ echo
 if [[ $REPLY =~ ^[Yy]$ ]]; then
   echo "Releasing $VERSION ..."
 
-  # update version
-  npm version "$VERSION" --message "release: release $VERSION"
-
   # change log
   npm run changelog
   git add CHANGELOG.md
-  git commit -m "docs: update changelog"
+
+  # update version
+  npm version "$VERSION" --message "release: release $VERSION"
 
   # push
   git push
