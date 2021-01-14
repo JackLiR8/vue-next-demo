@@ -26,13 +26,15 @@ echo
 if [[ $REPLY =~ ^[Yy]$ ]]; then
   echo "Releasing $VERSION ..."
 
+  # TODO test/Travis
+
   # update version
   npm --no-git-tag-version version "$VERSION"
   # change log
   npm run changelog
 
   # commit
-  git add  -A
+  git add -A
   git commit -m "release: release v$VERSION"
 
   # tag version
