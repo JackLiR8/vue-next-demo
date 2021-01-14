@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
 set -e
 
+# switch to branch main and merge dev
+git checkout main && git merge dev
+
 if [ -z "$1" ]; then
   read -p 'Enter new version: ' -r VERSION
 else
@@ -13,10 +16,6 @@ if [[ $(git tag) =~ "$VERSION" ]]; then
   exit 1
 fi
 
-# switch to branch main and merge dev
-git checkout main
-git merge dev
-
 # trap error
 # delete new tag, reset commit
 trap "git tag -d v$VERSION; git reset --hard HEAD^" ERR
@@ -26,14 +25,13 @@ echo
 if [[ $REPLY =~ ^[Yy]$ ]]; then
   echo "Releasing $VERSION ..."
 
-  # change log
-  npm run changelog
-
-  # commit
-  git add -A
-  
   # update version
   npm version "$VERSION" --message "release: release $VERSION"
+
+  # change log
+  npm run changelog
+  git add CHANGELOG.md
+  git commit -m "docs: update changelog"
 
   # push
   git push
