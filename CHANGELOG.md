@@ -1,3 +1,12 @@
+## [0.3.4](https://github.com/JackLiR8/vue-next-demo/compare/v0.3.3...v0.3.4) (2021-01-14)
+
+
+### Bug Fixes
+
+* **release:** fix scripts/release.sh ([a887007](https://github.com/JackLiR8/vue-next-demo/commit/a8870070e33d68c23d32f8f75e0de0c7b1fb6f64))
+
+
+
 ## [0.3.2](https://github.com/JackLiR8/vue-next-demo/compare/v0.3.1...v0.3.2) (2021-01-14)
 
 
