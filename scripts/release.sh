@@ -2,7 +2,8 @@
 set -e
 
 # switch to branch main and merge dev
-git checkout main && git merge dev
+git checkout main
+git merge dev
 
 if [ -z "$1" ]; then
   read -p 'Enter new version: ' -r VERSION
@@ -25,12 +26,17 @@ echo
 if [[ $REPLY =~ ^[Yy]$ ]]; then
   echo "Releasing $VERSION ..."
 
+  # update version
+  npm --no-git-tag-version version "$VERSION"
   # change log
   npm run changelog
-  git add CHANGELOG.md
 
-  # update version
-  npm version "$VERSION" --message "release: release $VERSION"
+  # commit
+  git add  -A
+  git commit -m "release: release v$VERSION"
+
+  # tag version
+  git tag "v$VERSION"
 
   # push
   git push
