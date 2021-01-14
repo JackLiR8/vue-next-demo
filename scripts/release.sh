@@ -13,6 +13,10 @@ if [[ $(git tag) =~ "$VERSION" ]]; then
   exit 1
 fi
 
+# switch to branch main and merge dev
+git checkout main
+git merge dev
+
 # trap error
 # delete new tag, reset commit
 trap "git tag -d v$VERSION; git reset --hard HEAD^" ERR
