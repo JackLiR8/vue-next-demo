@@ -7,7 +7,7 @@ else
   VERSION="$1"
 fi
 
-# limit duplate version
+# limit duplicate version
 if [[ $(git tag) =~ "$VERSION" ]]; then
   echo "Error: duplate version $VERSION" >&2
   exit 1
