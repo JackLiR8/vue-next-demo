@@ -1,3 +1,22 @@
+## [0.3.2](https://github.com/JackLiR8/vue-next-demo/compare/v0.3.1...v0.3.2) (2021-01-14)
+
+
+### Bug Fixes
+
+* **release:** fix release flow ([f8e8da3](https://github.com/JackLiR8/vue-next-demo/commit/f8e8da3caaab552820179d782b78f5dc4e3d1c32))
+
+
+
+## [0.3.1](https://github.com/JackLiR8/vue-next-demo/compare/v0.3.0...v0.3.1) (2021-01-14)
+
+
+### Bug Fixes
+
+* **git hooks:** fix git hooks not working, reinstall yorkie ([0ec872b](https://github.com/JackLiR8/vue-next-demo/commit/0ec872b4d6dc3e48000e1c6f52ebc1bf359dce18))
+* **release:** fix release script `scripts/release.sh` ([c6db7b4](https://github.com/JackLiR8/vue-next-demo/commit/c6db7b41319507699155fb576acd237ecaa4e51d))
+
+
+
 # [0.3.0](https://github.com/JackLiR8/vue-next-demo/compare/v0.2.0...v0.3.0) (2021-01-12)
 
 
