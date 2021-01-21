@@ -1,3 +1,17 @@
+# [0.4.0](https://github.com/JackLiR8/vue-next-demo/compare/v0.3.4...v0.4.0) (2021-01-21)
+
+
+### Features
+
+* import router ([825c0a6](https://github.com/JackLiR8/vue-next-demo/commit/825c0a64210d4f254f6ba4237fa9e84e0da40df7))
+
+
+### BREAKING CHANGES
+
+* add router
+
+
+
 ## [0.3.4](https://github.com/JackLiR8/vue-next-demo/compare/v0.3.3...v0.3.4) (2021-01-14)
 
 
