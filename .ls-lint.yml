@@ -1,5 +1,8 @@
 ls:
   src:
     .js: kebab-case
-    .vue: PascalCase
+    .ts: kebab-case
+    .d.ts: kebab-case
+    .spec.ts: kebab-case
     .png: kebab-case
+    .vue: PascalCase
