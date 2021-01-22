@@ -1,3 +1,17 @@
+# [0.5.0](https://github.com/JackLiR8/vue-next-demo/compare/v0.4.0...v0.5.0) (2021-01-22)
+
+
+### chore
+
+* import test system ([1a18f52](https://github.com/JackLiR8/vue-next-demo/commit/1a18f52f9ad4718ca83ef8f72f15fc61590a16be))
+
+
+### BREAKING CHANGES
+
+* import test system
+
+
+
 # [0.4.0](https://github.com/JackLiR8/vue-next-demo/compare/v0.3.4...v0.4.0) (2021-01-21)
 
 
