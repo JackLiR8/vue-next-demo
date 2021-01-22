@@ -1,6 +1,6 @@
 <template>
-  <h1>{{ msg }}</h1>
-  <button @click="count++">count is: {{ count }}</button>
+  <h1 data-test="msg-display">{{ msg }}</h1>
+  <button data-test="button" @click="count++">count is: {{ count }}</button>
   <div>
     <h3>use reactive</h3>
     First name: <input type="text" v-model="name.first"><br>
@@ -27,9 +27,6 @@ export default defineComponent({
   
   setup(props) {
     const count = ref(0)
-    watchEffect(() => {
-      console.log('count: ',count.value)
-    })
 
     const name = reactive({ first: 'hello', last: 'world' })
     const fullname = computed(() => {
