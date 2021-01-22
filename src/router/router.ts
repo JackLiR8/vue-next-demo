@@ -1,4 +1,4 @@
-import Home from '../views/Home.vue'
+import Home from '@/views/Home.vue'
 
 export const routes = [
   { 
@@ -7,6 +7,6 @@ export const routes = [
   },
   { 
     path: '/about',
-    component: () => import('../views/About.vue')
+    component: () => import('@/views/About.vue')
   },
 ]
