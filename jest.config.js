@@ -10,4 +10,12 @@ module.exports = {
   moduleNameMapper: {
     '^@/(.*)$': '<rootDir>/src/$1',
   },
+  collectCoverage: true,
+  coverageDirectory: 'coverage',
+  collectCoverageFrom: [
+    'src/components/*.vue',
+    'src/views/**/*.vue',
+    'src/utils/**/*.{js,ts}',
+  ],
+  coverageReporters: ['html', 'lcov', 'text'],
 }
