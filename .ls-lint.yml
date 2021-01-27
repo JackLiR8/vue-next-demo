@@ -5,4 +5,5 @@ ls:
     .d.ts: kebab-case
     .spec.ts: kebab-case
     .png: kebab-case
+    .scss: kebab-case
     .vue: PascalCase
