@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="about-page">
     about
     <router-link to="/">home</router-link>
   </div>
@@ -11,6 +11,9 @@ export default {
 }
 </script>
 
-<style>
-
+<style lang="scss" scoped>
+.about-page {
+  color: $color-error;
+  font-size: 20px;
+}
 </style>
