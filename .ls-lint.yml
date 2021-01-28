@@ -5,7 +5,7 @@ ls:
     .d.ts: kebab-case
     .spec.ts: kebab-case
     .png: kebab-case
-    .scss: kebab-case | snake-case
+    .scss: kebab-case | snake_case
     .vue: PascalCase
 
     locale:
