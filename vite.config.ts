@@ -20,7 +20,8 @@ export default defineConfig({
     preprocessorOptions: {
       scss: {
         additionalData: getScssAdditional(
-          'src/style/variables.scss'
+          'src/style/variables.scss',
+          'src/style/mixin.scss'
         )
       }
     }
