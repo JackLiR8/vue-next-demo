@@ -1,15 +1,16 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <router-view></router-view>
+  <main-layout>
+    <router-view></router-view>
+  </main-layout>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import MainLayout from '@/layout/Layout.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    MainLayout
   }
 }
 </script>
