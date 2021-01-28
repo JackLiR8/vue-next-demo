@@ -1,12 +1,45 @@
+@use 'mixin';
+$top-height: 60px;
 
 .layout {
   display: flex;
   &__sidebar {
     width: 260px;
     height: 100vh;
-    overflow-y: scroll;
-    padding: 20px 10px;
     border-right: 1px solid $color-border;
+    
+    .icon-wrapper {
+      height: $top-height;
+      background-color: $color-primary;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+      .icon {
+        height: 50px;
+        width: 50px;
+      }
+    }
+    .menu {
+      height: calc(100vh - #{$top-height});
+      padding: 10px 4px;
+      overflow-y: scroll;
+
+      &__item {
+        height: 40px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        font-size: $font-size-medium;
+        padding: 0 10px;
+        border-radius: 5px;
+
+        &.active {
+          @include mixin.active-primary;
+        }
+      }
+    }
   }
 
   &__container {
@@ -14,7 +47,7 @@
     height: 100vh;
     
     &__header {
-      height: 60px;
+      height: $top-height;
       width: 100%;
       border-bottom: 1px solid $color-border;
     }

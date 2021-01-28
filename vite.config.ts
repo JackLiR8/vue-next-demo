@@ -21,7 +21,6 @@ export default defineConfig({
       scss: {
         additionalData: getScssAdditional(
           'src/style/variables.scss',
-          'src/style/mixin.scss'
         )
       }
     }

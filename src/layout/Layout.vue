@@ -1,8 +1,8 @@
 <template>
   <div class="layout">
     <nav class="layout__sidebar">
-      <div class="icon">
-
+      <div class="icon-wrapper">
+        <img class="icon" src="src/assets/logo.png">
       </div>
       
       <ul class="menu">
@@ -10,6 +10,7 @@
           v-for="item in routesData"
           :key="item.name"
           class="menu__item"
+          :class="{ active: route.name === item.name }"
           @click="router.push(item.path)">
           {{ t(item.name) }}
         </li>
