@@ -1,3 +1,20 @@
+## [0.5.1](https://github.com/JackLiR8/vue-next-demo/compare/v0.5.0...v0.5.1) (2021-01-28)
+
+
+### Bug Fixes
+
+* delete home.vue ([b906390](https://github.com/JackLiR8/vue-next-demo/commit/b9063902571e841cf12c0dcab5bd2c9057faec0b))
+* **jest:** fix js transform config ([e93c522](https://github.com/JackLiR8/vue-next-demo/commit/e93c5225ea82d53efe3e60396df76a0f1fca9fbd))
+
+
+### Features
+
+* **locale:** import i18n ([a4f86b4](https://github.com/JackLiR8/vue-next-demo/commit/a4f86b402b5379ce02477f2b587c579aeebdc40e))
+* import scss ([dd067a5](https://github.com/JackLiR8/vue-next-demo/commit/dd067a5ff5acdf036b381b03d5899e959b6a4132))
+* import scss ([8ebc594](https://github.com/JackLiR8/vue-next-demo/commit/8ebc59418d992367d21eb3a37775f2160711c60c))
+
+
+
 # [0.5.0](https://github.com/JackLiR8/vue-next-demo/compare/v0.4.0...v0.5.0) (2021-01-22)
 
 
