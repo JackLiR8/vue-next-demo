@@ -6,8 +6,13 @@
       </div>
       
       <ul class="menu">
-        <li class="menu__item">home</li>
-        <li class="menu__item">about</li>
+        <li
+          v-for="item in routesData"
+          :key="item.name"
+          class="menu__item"
+          @click="router.push(item.path)">
+          {{ t(item.name) }}
+        </li>
       </ul>
     </nav>
     <main class="layout__container">
@@ -22,13 +27,29 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue'
+import { defineComponent, reactive } from 'vue'
+import { useI18n } from 'vue-i18n'
+import { useRoute, useRouter } from 'vue-router'
+import { routes } from '@/router/routes'
+
 export default defineComponent({
   name: 'MainLayout',
 
+  setup() {
+    const { t } = useI18n()
+    const route = useRoute()
+    const router = useRouter()
+    const routesData = reactive(routes)
+    
+
+    return {
+      t,
+      route,
+      router,
+      routesData,
+    }
+  }
 })
 </script>
 
-<style src="@/style/layout.scss" scoped>
-
-</style>
+<style src="@/style/layout.scss" scoped></style>

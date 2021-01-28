@@ -7,3 +7,6 @@ ls:
     .png: kebab-case
     .scss: kebab-case
     .vue: PascalCase
+
+    locale:
+      .ts: pointcase
